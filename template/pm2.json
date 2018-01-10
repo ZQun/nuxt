@@ -1,0 +1,29 @@
+{
+    "apps": {
+        "name": "{{ name }}",
+        "script": "node_modules/.bin/nuxt",
+        "args": "start",
+        "env_prod": {
+            "HOST": "0.0.0.0",
+            "PORT": "{{ port }}",
+            "NODE_ENV": "production",
+            "SERVER_ENV": "prod"
+        },
+        "env_dev": {
+            "HOST": "0.0.0.0",
+            "PORT": "{{ port }}",
+            "NODE_ENV": "production",
+            "SERVER_ENV": "dev"
+        },
+        "env_uat": {
+            "HOST": "0.0.0.0",
+            "PORT": "{{ port }}",
+            "NODE_ENV": "production",
+            "SERVER_ENV": "uat"
+        },
+        "error_file": "./.log/log-err.log",
+        "out_file": "./.log/log-out.log",
+        "pid_file": "./.log/log.pid",
+        "watch": false
+    }
+}
