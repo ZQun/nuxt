@@ -75,6 +75,7 @@ module.exports = {
     ** global CSS
     */
     css: [
+        'normalize.css/normalize.css',
         'iview/dist/styles/iview.css',
         'assets/styles/common.scss',
     ],
