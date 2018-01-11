@@ -14,7 +14,7 @@ module.exports = {
       'type': 'string',
       'required': false,
       'message': '项目描述',
-      'default': '佰万仓ssr(nuxt)项目'
+      'default': '佰万仓ssr(nuxt+iview+axios+vuex)项目'
     },
     author: {
       'type': 'string',
