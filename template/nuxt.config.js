@@ -62,7 +62,6 @@ module.exports = {
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-            { rel: 'stylesheet', href: 'styles/iview.css' },
         ],
         script: [
             { src: 'ie.js' },
@@ -77,6 +76,7 @@ module.exports = {
     */
     css: [
         'normalize.css/normalize.css',
+        'iview/dist/styles/iview.css',
         'assets/styles/common.scss',
     ],
     /*
