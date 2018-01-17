@@ -11,23 +11,22 @@ module.exports = {
         { src: '~plugins/unssr.js', ssr: false },
     ],
     modules: [
-        ['@nuxtjs/axios', {
-            credentials: false,
-            baseURL,
-            requestInterceptor: (config, { store }) => {
-                if (store.state.token) {
-                    config.headers.common.Authorization = store.state.token
-                }
-                return config
-            },
-            redirectError: {
-                401: '/login',
-            },
-            errorHandler(e, { error }) {
-                error(`${e}Request Error: ${error}`)
-            },
-        }],
+        '@nuxtjs/axios',
     ],
+    axios: {
+        credentials: false,
+        baseURL,
+        requestInterceptor: (config, { store }) => {
+            if (store.state.token) {
+                config.headers.common.Authorization = store.state.token
+            }
+            return config
+        },
+        redirectError: {
+            401: '/login',
+        },
+        disableDefaultErrorHandler: false,
+    },
     performance: {
         prefetch: true,
         gzip: true,
