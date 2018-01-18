@@ -1,3 +1,4 @@
+//baseUrl ,在这可以通过不同的script命令参数获得不通接口地址
 const baseURL = ''
 
 module.exports = {
@@ -63,7 +64,7 @@ module.exports = {
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         ],
         script: [
-            { src: 'ie.js' },
+            { src: '/ie.js' },
         ],
     },
     /*
