@@ -25,11 +25,11 @@
     "@nuxtjs/axios": "^4.5.2",
     "event-source-polyfill": "0.0.12",
     "history.js": "^1.8.0",
-    "iview": "^2.8.0",
+    "iview": "^3.0.1",
     "js-cookie": "^2.2.0",
     "js-polyfills": "^0.1.41",
     "normalize.css": "^7.0.0",
-    "nuxt": "^1.1.1"
+    "nuxt": "^1.4.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.5",
