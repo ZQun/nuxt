@@ -14,7 +14,7 @@ module.exports = {
       'type': 'string',
       'required': false,
       'message': '项目描述',
-      'default': '佰万仓ssr(nuxt+iview+axios+vuex)项目'
+      'default': 'ZQun-ssr(nuxt+iview+axios+vuex)项目'
     },
     author: {
       'type': 'string',
@@ -24,8 +24,8 @@ module.exports = {
       'type': 'string',
       'required': true,
       'message': '服务器端口号（请统一生产环境端口）',
-      'default': '8080'
+      'default': '3000'
     },
   },
-  completeMessage: '{{#inPlace}}To get started:\n\n  npm install # Or yarn\n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm install # Or yarn\n  npm run dev{{/inPlace}}'
+  completeMessage: '{{#inPlace}}To get started:\n\n  npm i # Or yarn\n  npm run dev{{else}}To get started:\n\n  cd {{destDirName}}\n  npm i # Or yarn\n  npm run dev{{/inPlace}}'
 };

@@ -4,13 +4,19 @@
   "description": "{{ description }}",
   "author": "{{ author }}",
   "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "{{ port }}"
+    }
+  },
   "scripts": {
-    "dev": "nuxt -p {{ port }} -H 0.0.0.0",
+    "dev": "nuxt",
     "build": "nuxt build",
     "build:dev": "nuxt build",
     "build:uat": "SERVER_ENV=uat nuxt build",
     "build:prod": "SERVER_ENV=prod nuxt build",
-    "start": "nuxt start -p {{ port }} -H 0.0.0.0",
+    "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"

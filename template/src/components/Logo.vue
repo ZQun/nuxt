@@ -1,5 +1,5 @@
 <template>
     <div>
-        BWCMALL nuxt 模版 @ Harvey
+        ZQun nuxt 模版 @ Harvey
     </div>
 </template>
