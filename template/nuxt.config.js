@@ -83,14 +83,10 @@ module.exports = {
     ** Build configuration
     */
     build: {
-        vendor: ['iview'],
         analyze: {
             analyzerMode: 'static',
         },
-        filenames: {
-            vendor: 'bwc.vendor.[hash].js',
-            app: 'bwc.app.[chunkhash].js',
-        },
+        filenames: {},
         postcss: [
             require('postcss-nested')(),
             require('postcss-responsive-type')(),
